@@ -1,19 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/((?!images|assets|favicon.ico|.*\\.[a-z]{2,4}$).*)",
+      "source": "/(.*)",
       "destination": "/index.html"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/images/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
     }
   ]
 }
