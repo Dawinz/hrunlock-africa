@@ -213,7 +213,7 @@ const Home = () => {
             })}
           </div>
           <div className="text-center" style={{ marginTop: '2rem' }}>
-            <Link to="/customers" className="btn btn-secondary">View All Customers</Link>
+            <Link to="/customers" className="btn btn-primary">View All Customers</Link>
           </div>
         </div>
       </section>
