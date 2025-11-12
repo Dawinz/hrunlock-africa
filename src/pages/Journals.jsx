@@ -6,10 +6,10 @@ const Journals = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-      const CHANNEL_HANDLE = '@HRUNLOCKafrica';
-      const CHANNEL_URL = 'https://www.youtube.com/@HRUNLOCKafrica';
-      // YouTube Channel ID for automatic video loading
-      const CHANNEL_ID = 'UCP2TPJBbAqy9X_W-4ebtIdQ';
+  const CHANNEL_HANDLE = '@HRUNLOCKafrica';
+  const CHANNEL_URL = 'https://www.youtube.com/@HRUNLOCKafrica';
+  // YouTube Channel ID for automatic video loading
+  const CHANNEL_ID = 'UCP2TPJBbAqy9X_W-4ebtIdQ';
 
   // Function to extract video ID from YouTube URL or ID
   const extractVideoId = (url) => {
