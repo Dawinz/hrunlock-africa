@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import '../main.css';
 
 const Customers = () => {
@@ -31,6 +32,8 @@ const Customers = () => {
     }
   ];
 
+  const [imageErrors, setImageErrors] = useState({});
+
   return (
     <>
       <section className="page-header">
@@ -47,8 +50,7 @@ const Customers = () => {
           </div>
           <div className="customers-grid">
             {companies.map((company, index) => {
-              // Check if logo exists by trying to load it
-              const hasLogo = true; // Will be determined by image onError
+              const hasError = imageErrors[company.name];
               
               return (
                 <div key={index} className="customer-item">
@@ -63,27 +65,42 @@ const Customers = () => {
                       width: '100%',
                       height: '100%',
                       textDecoration: 'none',
-                      color: 'inherit'
+                      color: 'inherit',
+                      padding: '1rem'
                     }}
+                    title={company.name}
                   >
-                    <img
-                      src={company.logo}
-                      alt={company.name}
-                      style={{
-                        maxWidth: '100%',
-                        maxHeight: '80px',
-                        objectFit: 'contain',
-                        display: 'block'
-                      }}
-                      onError={(e) => {
-                        // If logo doesn't exist, hide image and show text
-                        e.target.style.display = 'none';
-                        const parent = e.target.parentElement;
-                        if (parent) {
-                          parent.innerHTML = `<p style="color: var(--neutral-gray); font-weight: 600; text-align: center; margin: 0;">${company.name}</p>`;
-                        }
-                      }}
-                    />
+                    {!hasError ? (
+                      <img
+                        src={company.logo}
+                        alt={company.name}
+                        style={{
+                          maxWidth: '100%',
+                          maxHeight: '100px',
+                          width: 'auto',
+                          height: 'auto',
+                          objectFit: 'contain',
+                          display: 'block'
+                        }}
+                        onError={() => {
+                          console.error('Failed to load logo:', company.logo);
+                          setImageErrors(prev => ({ ...prev, [company.name]: true }));
+                        }}
+                        onLoad={() => {
+                          console.log('Logo loaded:', company.name);
+                        }}
+                      />
+                    ) : (
+                      <p style={{ 
+                        color: 'var(--neutral-gray)', 
+                        fontWeight: 600, 
+                        textAlign: 'center', 
+                        margin: 0,
+                        fontSize: '0.875rem'
+                      }}>
+                        {company.name}
+                      </p>
+                    )}
                   </a>
                 </div>
               );
