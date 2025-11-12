@@ -83,7 +83,6 @@ const Customers = () => {
                             height: 'auto',
                             objectFit: 'contain',
                             display: 'block',
-                            marginBottom: '1rem',
                             margin: '0 auto 1rem'
                           }}
                           onError={(e) => {
