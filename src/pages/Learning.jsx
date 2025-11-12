@@ -30,10 +30,13 @@ const Learning = () => {
         <div className="container">
           <h1>Online Learning</h1>
           <p className="learning-intro">
-            Exchange ideas, knowledge, and capacity through our e-Learning courses. Our highly interactive programs—featuring presentations, group discussions, and technical sessions—will help you gain new skills, share expertise, discover best practices, and forge new connections.
+            Welcome to the HRUNLOCK Africa Online Learning Exchange — a digital platform powered by LearnWorlds, where learning becomes personal, emotional, and transformative.
           </p>
           <p className="learning-intro-secondary">
-            One of our priorities is evaluating the outcomes of our programs and learning from participant feedback so that we can continuously improve our offerings. All e-Learning courses undertaken within HRUNLOCK Africa are part of a common learning Impact Evaluation Framework to measure our impact and effectiveness.
+            Our e-Learning experience goes beyond ordinary online training. It's a living community of thinkers, doers, and change-makers who come together to exchange ideas, sharpen skills, and grow in emotional and cultural intelligence. Through interactive courses, live sessions, and discussion spaces, participants gain practical, behaviorally grounded skills they can apply immediately, share expertise and insights with a diverse community of professionals, discover best practices across leadership, communication, and personal growth, and forge authentic connections that continue long after the course ends.
+          </p>
+          <p className="learning-intro-secondary">
+            Every course is part of our Learning Impact Evaluation Framework, ensuring measurable transformation and continuous improvement based on participant feedback.
           </p>
         </div>
       </section>
@@ -51,40 +54,35 @@ const Learning = () => {
       <section className="learning-benefits">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">Why Choose Our e-Learning Programs?</h2>
-            <p className="section-subtitle">Comprehensive, interactive, and designed for real-world application</p>
+            <h2 className="section-title">Why Choose Our E-learning Programs?</h2>
+            <p className="section-subtitle">At HRUNLOCK Africa, we believe learning should move both the mind and the soul, that's why our platform doesn't just teach; it awakens.</p>
           </div>
           
           <div className="benefits-grid">
             <div className="benefit-item">
-              <div className="benefit-icon">📚</div>
-              <h3>Comprehensive Curriculum</h3>
-              <p>Our courses cover the full spectrum of HR and leadership topics, from foundational principles to advanced strategies.</p>
+              <div className="benefit-icon">🌍</div>
+              <h3>Rooted in the African Experience</h3>
+              <p>Our courses are designed with African realities in mind, blending psychology, culture, and behavioral science to make learning relevant, inspiring, and alive.</p>
             </div>
             <div className="benefit-item">
               <div className="benefit-icon">💡</div>
-              <h3>Interactive Learning</h3>
-              <p>Engage with presentations, group discussions, and technical sessions that bring concepts to life.</p>
-            </div>
-            <div className="benefit-item">
-              <div className="benefit-icon">🌍</div>
-              <h3>African Context</h3>
-              <p>Content specifically tailored to address the unique challenges and opportunities in African organizations.</p>
-            </div>
-            <div className="benefit-item">
-              <div className="benefit-icon">🤝</div>
-              <h3>Expert Facilitation</h3>
-              <p>Learn from experienced HR professionals and leadership coaches with deep expertise in African markets.</p>
+              <h3>Interactive & Immersive</h3>
+              <p>We go beyond slides and lectures. Each program features live sessions, discussions, reflections, and real-world projects that connect knowledge to personal and professional growth.</p>
             </div>
             <div className="benefit-item">
               <div className="benefit-icon">📊</div>
-              <h3>Impact Evaluation</h3>
-              <p>All courses are part of our Impact Evaluation Framework to ensure measurable learning outcomes.</p>
+              <h3>Impact You Can Measure</h3>
+              <p>Through our Learning Impact Evaluation Framework, every program tracks progress and transformation, ensuring that learning translates into real-life change.</p>
             </div>
             <div className="benefit-item">
-              <div className="benefit-icon">🎓</div>
-              <h3>Certification</h3>
-              <p>Earn certificates upon completion that demonstrate your commitment to professional development.</p>
+              <div className="benefit-icon">🤝</div>
+              <h3>A Community That Grows With You</h3>
+              <p>When you enroll, you join a community of thinkers, professionals, and change-makers who learn together, support each other, and stay connected beyond the classroom.</p>
+            </div>
+            <div className="benefit-item">
+              <div className="benefit-icon">❤️</div>
+              <h3>Learning That Moves the Soul</h3>
+              <p>Our programs are emotionally intelligent by design, crafted to touch instincts, reshape beliefs, and ignite lasting transformation.</p>
             </div>
           </div>
         </div>
@@ -126,8 +124,8 @@ const Learning = () => {
         <div className="container">
           <div className="learning-newsletter-content">
             <div className="learning-newsletter-text">
-              <h2>Join our Global Network</h2>
-              <p>Subscribe to our mailing list to get updates on our activities, exclusive learning and networking opportunities, the latest research insights, and more.</p>
+              <h2>Join Our Global Network</h2>
+              <p>Be part of a growing community of thinkers, leaders, and changemakers redefining the future of Africa, the way we live, lead, and connect. By subscribing to our mailing list, you'll receive updates on HRUNLOCK Africa's programs and events, exclusive learning and networking opportunities, and fresh insights from our behavioral and cultural research. Stay connected, stay inspired, and keep freeing your power.</p>
             </div>
             <form className="learning-newsletter-form" onSubmit={handleNewsletterSubmit}>
               <input 

@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
             <p className="footer-tagline">Awaken boldness, clarity, and purpose.</p>
             <p className="footer-description">
-              Leading human resource development consultancy transforming organizations across Africa through innovative leadership and culture programs.
+              A cultural and behavioral insight firm redefining Africa's future through emotional intelligence, cultural intelligence, and human-centered design. We help governments, organizations, and individuals unlock their inner power, building systems, leaders, and cultures that feel deeply human, bold, and alive.
             </p>
             <div className="social-links">
               <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="social-link">
@@ -95,7 +95,7 @@ const Footer = () => {
               <button type="submit" className="btn-footer">Subscribe</button>
             </form>
             <div className="footer-contact-info">
-              <p><strong>Email:</strong> <a href="mailto:contact@hrunlockafrica.com">contact@hrunlockafrica.com</a></p>
+              <p><strong>Email:</strong> <a href="mailto:hello@hrunlockafrica.com">hello@hrunlockafrica.com</a></p>
               <p><strong>Phone:</strong> <a href="tel:+255757394254">+255 757 394 254</a></p>
             </div>
           </div>

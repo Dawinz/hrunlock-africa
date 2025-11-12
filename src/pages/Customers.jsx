@@ -14,37 +14,27 @@ const Customers = () => {
       <section className="customers">
         <div className="container">
           <div className="customers-intro">
-            <p>We are proud to work with organizations across various industries in Africa. Our clients range from startups to established enterprises, all seeking to transform their human resources and leadership capabilities.</p>
+            <p>We are proud to work with trusted leading organizations across various industries in Africa. Our clients range from foundations to established enterprises, all seeking to transform their human resources and leadership capabilities.</p>
           </div>
           <div className="customers-grid">
             <div className="customer-item">
               <div className="customer-placeholder">
-                <p>Customer Logo 1</p>
+                <p><a href="https://www.nomad-tanzania.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>Nomad Tanzania Limited</a></p>
               </div>
             </div>
             <div className="customer-item">
               <div className="customer-placeholder">
-                <p>Customer Logo 2</p>
+                <p><a href="https://www.juliusnyerere.org/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>Mwalimu Nyerere Foundation</a></p>
               </div>
             </div>
             <div className="customer-item">
               <div className="customer-placeholder">
-                <p>Customer Logo 3</p>
+                <p><a href="https://tazama.co.zm" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>TAZAMA Pipeline</a></p>
               </div>
             </div>
             <div className="customer-item">
               <div className="customer-placeholder">
-                <p>Customer Logo 4</p>
-              </div>
-            </div>
-            <div className="customer-item">
-              <div className="customer-placeholder">
-                <p>Customer Logo 5</p>
-              </div>
-            </div>
-            <div className="customer-item">
-              <div className="customer-placeholder">
-                <p>Customer Logo 6</p>
+                <p><a href="https://www.cotwu-tanzania.org" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>COTWU Tanzania</a></p>
               </div>
             </div>
           </div>

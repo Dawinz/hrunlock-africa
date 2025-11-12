@@ -51,6 +51,9 @@ const Header = () => {
             <Link to="/learning" className={`nav-link ${isActive('/learning') ? 'active' : ''}`}>
               Online Learning
             </Link>
+            <Link to="/journals" className={`nav-link ${isActive('/journals') ? 'active' : ''}`}>
+              Journals
+            </Link>
             <Link to="/gallery" className={`nav-link ${isActive('/gallery') ? 'active' : ''}`}>
               Gallery
             </Link>

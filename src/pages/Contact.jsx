@@ -55,7 +55,7 @@ const Contact = () => {
       <section className="page-header">
         <div className="container">
           <h1>Contact Us</h1>
-          <p>Get in touch with our team</p>
+          <p>Ready to transform your organization, and the people within it? Let's build systems that feel human, perform powerfully, and last. Contact us today and begin your journey with HRUNLOCK Africa.</p>
         </div>
       </section>
 
@@ -67,7 +67,7 @@ const Contact = () => {
               <div className="contact-details">
                 <p><strong>Address:</strong><br />MNF Square, 7th Floor<br />Sokoine Drive<br />Dar es Salaam, Tanzania</p>
                 <p><strong>Phone:</strong><br /><a href="tel:+255757394254">+255 757 394 254</a></p>
-                <p><strong>Email:</strong><br /><a href="mailto:contact@hrunlockafrica.com">contact@hrunlockafrica.com</a></p>
+                <p><strong>Email:</strong><br /><a href="mailto:hello@hrunlockafrica.com">hello@hrunlockafrica.com</a></p>
               </div>
               <div className="contact-hours">
                 <h4>Business Hours</h4>

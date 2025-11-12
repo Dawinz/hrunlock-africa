@@ -44,7 +44,7 @@ const Home = () => {
         <div className="container">
           <div className="hero-content">
             <h1 className="hero-title">Awaken <span className="gradient-text">Boldness</span>, Clarity, and Purpose</h1>
-            <p className="hero-subtitle">Transforming human resources and leadership across Africa through innovative development programs and strategic consulting.</p>
+            <p className="hero-subtitle">We believe Africa's deepest problems will never be solved by technology alone, but by psychology, cultural intelligence and design. By reshaping the way people think, feel, and act, we ignite the kind of transformation that no tool or machine can deliver.</p>
             <div className="hero-cta">
               <Link to="/contact" className="btn btn-primary">Get Started</Link>
               <Link to="/about" className="btn btn-secondary">Learn More</Link>
@@ -57,28 +57,28 @@ const Home = () => {
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">What We Offer</h2>
-            <p className="section-subtitle">Comprehensive HR solutions for organizations across Africa</p>
+            <p className="section-subtitle">At HRUNLOCK Africa, we transform psychology, culture, and design into tools that move people at the level of emotion and instinct. We work with governments, organizations, and individuals ready to grow, awaken, and redefine what it means to lead, create, and live with meaning.</p>
           </div>
           <div className="overview-grid">
             <div className="overview-card">
-              <h3>Leadership Transformation</h3>
-              <p>Develop effective leaders who drive organizational success and create lasting impact.</p>
+              <h3>Training Programs</h3>
+              <p><strong>Move minds. Touch hearts. Transform behavior.</strong> We deliver immersive training in Cultural Intelligence, Emotional Intelligence, and Communication Strategy, crafted to awaken awareness, ignite creativity, and inspire authentic leadership.</p>
+              <Link to="/learning" className="btn btn-primary">Learn More</Link>
+            </div>
+            <div className="overview-card">
+              <h3>Cultural & Behavioral Insights</h3>
+              <p><strong>Decode what drives people.</strong> Through research, workshops, and conferences, we uncover the hidden emotional and cultural codes that shape performance, loyalty, and reform, helping leaders design systems that truly connect.</p>
+              <Link to="/research" className="btn btn-primary">Explore</Link>
+            </div>
+            <div className="overview-card">
+              <h3>Strategic Consultancy</h3>
+              <p><strong>Where science meets soul.</strong> We help organizations craft reforms, policies, and marketing strategies rooted in behavioral science — blending emotion, data, and design to shift how people think, feel, and act.</p>
+              <Link to="/contact" className="btn btn-primary">Get Started</Link>
+            </div>
+            <div className="overview-card">
+              <h3>Wellness & Lifestyle Initiatives</h3>
+              <p><strong>Because performance begins within.</strong> We promote holistic living through programs that unite mindfulness, nutrition, movement, and emotional balance, nurturing the human spirit behind every achievement.</p>
               <Link to="/about" className="btn btn-primary">Learn More</Link>
-            </div>
-            <div className="overview-card">
-              <h3>Events & Workshops</h3>
-              <p>Join our conferences and workshops designed to transform your team and organization.</p>
-              <Link to="/events" className="btn btn-primary">View Events</Link>
-            </div>
-            <div className="overview-card">
-              <h3>Online Learning</h3>
-              <p>Access comprehensive learning resources through our online platforms.</p>
-              <Link to="/learning" className="btn btn-primary">Explore</Link>
-            </div>
-            <div className="overview-card">
-              <h3>Research & Insights</h3>
-              <p>Stay informed with the latest research and insights on HR trends in Africa.</p>
-              <Link to="/research" className="btn btn-primary">Read More</Link>
             </div>
           </div>
         </div>
@@ -179,10 +179,10 @@ const Home = () => {
           <div className="quick-contact-content">
             <div className="quick-contact-info">
               <h2>Get in Touch</h2>
-              <p>Ready to transform your organization? Contact us today to learn how we can help.</p>
+              <p>Ready to transform your organization, and the people within it? Let's build systems that feel human, perform powerfully, and last. Contact us today and begin your journey with HRUNLOCK Africa.</p>
               <div className="quick-contact-details">
                 <p><strong>Phone:</strong> <a href="tel:+255757394254">+255 757 394 254</a></p>
-                <p><strong>Email:</strong> <a href="mailto:contact@hrunlockafrica.com">contact@hrunlockafrica.com</a></p>
+                <p><strong>Email:</strong> <a href="mailto:hello@hrunlockafrica.com">hello@hrunlockafrica.com</a></p>
                 <p><strong>Address:</strong> MNF Square, 7th Floor, Sokoine Drive, Dar es Salaam, Tanzania</p>
               </div>
             </div>
