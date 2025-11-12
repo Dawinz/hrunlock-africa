@@ -2,10 +2,34 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import '../main.css';
 
+const customerLogos = [
+  {
+    name: 'Nomad Tanzania Limited',
+    url: 'https://www.nomad-tanzania.com',
+    logo: '/images/customers/nomad-tanzania.png'
+  },
+  {
+    name: 'Mwalimu Nyerere Foundation',
+    url: 'https://www.juliusnyerere.org/',
+    logo: '/images/customers/mwalimu-nyerere-foundation.png'
+  },
+  {
+    name: 'TAZAMA Pipeline',
+    url: 'https://tazama.co.zm',
+    logo: '/images/customers/tazama-pipeline.png'
+  },
+  {
+    name: 'COTWU Tanzania',
+    url: 'https://www.cotwu-tanzania.org',
+    logo: '/images/customers/cotwu-tanzania.png'
+  }
+];
+
 const Home = () => {
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState('');
+  const [imageErrors, setImageErrors] = useState({});
 
   const handleNewsletterSubmit = async (e) => {
     e.preventDefault();
@@ -117,26 +141,76 @@ const Home = () => {
             <p className="section-subtitle">We work with organizations across various industries in Africa</p>
           </div>
           <div className="customers-grid">
-            <div className="customer-item">
-              <div className="customer-placeholder">
-                <p>Customer Logo 1</p>
-              </div>
-            </div>
-            <div className="customer-item">
-              <div className="customer-placeholder">
-                <p>Customer Logo 2</p>
-              </div>
-            </div>
-            <div className="customer-item">
-              <div className="customer-placeholder">
-                <p>Customer Logo 3</p>
-              </div>
-            </div>
-            <div className="customer-item">
-              <div className="customer-placeholder">
-                <p>Customer Logo 4</p>
-              </div>
-            </div>
+            {customerLogos.map((company, index) => {
+              const hasError = imageErrors[company.name];
+              
+              return (
+                <div key={index} className="customer-item">
+                  <a 
+                    href={company.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    style={{ 
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      width: '100%',
+                      height: '100%',
+                      textDecoration: 'none',
+                      color: 'inherit',
+                      padding: '1.5rem 1rem'
+                    }}
+                    title={company.name}
+                  >
+                    {!hasError ? (
+                      <>
+                        <img
+                          src={company.logo}
+                          alt={company.name}
+                          style={{
+                            maxWidth: '100%',
+                            maxHeight: '80px',
+                            width: 'auto',
+                            height: 'auto',
+                            objectFit: 'contain',
+                            display: 'block',
+                            margin: '0 auto 1rem'
+                          }}
+                          onError={(e) => {
+                            console.error('Failed to load logo:', company.logo, 'for company:', company.name);
+                            setImageErrors(prev => ({ ...prev, [company.name]: true }));
+                          }}
+                          onLoad={() => {
+                            console.log('Logo loaded successfully:', company.name);
+                          }}
+                        />
+                        <p style={{ 
+                          color: 'var(--neutral-gray)', 
+                          fontWeight: 500, 
+                          textAlign: 'center', 
+                          margin: 0,
+                          fontSize: '0.875rem',
+                          lineHeight: '1.4'
+                        }}>
+                          {company.name}
+                        </p>
+                      </>
+                    ) : (
+                      <p style={{ 
+                        color: 'var(--neutral-gray)', 
+                        fontWeight: 600, 
+                        textAlign: 'center', 
+                        margin: 0,
+                        fontSize: '0.875rem'
+                      }}>
+                        {company.name}
+                      </p>
+                    )}
+                  </a>
+                </div>
+              );
+            })}
           </div>
           <div className="text-center" style={{ marginTop: '2rem' }}>
             <Link to="/customers" className="btn btn-secondary">View All Customers</Link>
