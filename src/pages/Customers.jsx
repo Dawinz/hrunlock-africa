@@ -83,14 +83,16 @@ const Customers = () => {
                             height: 'auto',
                             objectFit: 'contain',
                             display: 'block',
-                            marginBottom: '1rem'
+                            marginBottom: '1rem',
+                            margin: '0 auto 1rem'
                           }}
-                          onError={() => {
-                            console.error('Failed to load logo:', company.logo);
+                          onError={(e) => {
+                            console.error('Failed to load logo:', company.logo, 'for company:', company.name);
+                            console.error('Image error details:', e);
                             setImageErrors(prev => ({ ...prev, [company.name]: true }));
                           }}
                           onLoad={() => {
-                            console.log('Logo loaded:', company.name);
+                            console.log('Logo loaded successfully:', company.name, 'from:', company.logo);
                           }}
                         />
                         <p style={{ 
