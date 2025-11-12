@@ -60,36 +60,50 @@ const Customers = () => {
                     rel="noopener noreferrer"
                     style={{ 
                       display: 'flex',
+                      flexDirection: 'column',
                       alignItems: 'center',
                       justifyContent: 'center',
                       width: '100%',
                       height: '100%',
                       textDecoration: 'none',
                       color: 'inherit',
-                      padding: '1rem'
+                      padding: '1.5rem 1rem'
                     }}
                     title={company.name}
                   >
                     {!hasError ? (
-                      <img
-                        src={company.logo}
-                        alt={company.name}
-                        style={{
-                          maxWidth: '100%',
-                          maxHeight: '100px',
-                          width: 'auto',
-                          height: 'auto',
-                          objectFit: 'contain',
-                          display: 'block'
-                        }}
-                        onError={() => {
-                          console.error('Failed to load logo:', company.logo);
-                          setImageErrors(prev => ({ ...prev, [company.name]: true }));
-                        }}
-                        onLoad={() => {
-                          console.log('Logo loaded:', company.name);
-                        }}
-                      />
+                      <>
+                        <img
+                          src={company.logo}
+                          alt={company.name}
+                          style={{
+                            maxWidth: '100%',
+                            maxHeight: '80px',
+                            width: 'auto',
+                            height: 'auto',
+                            objectFit: 'contain',
+                            display: 'block',
+                            marginBottom: '1rem'
+                          }}
+                          onError={() => {
+                            console.error('Failed to load logo:', company.logo);
+                            setImageErrors(prev => ({ ...prev, [company.name]: true }));
+                          }}
+                          onLoad={() => {
+                            console.log('Logo loaded:', company.name);
+                          }}
+                        />
+                        <p style={{ 
+                          color: 'var(--neutral-gray)', 
+                          fontWeight: 500, 
+                          textAlign: 'center', 
+                          margin: 0,
+                          fontSize: '0.875rem',
+                          lineHeight: '1.4'
+                        }}>
+                          {company.name}
+                        </p>
+                      </>
                     ) : (
                       <p style={{ 
                         color: 'var(--neutral-gray)', 
