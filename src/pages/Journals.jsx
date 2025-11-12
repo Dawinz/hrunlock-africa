@@ -6,12 +6,10 @@ const Journals = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const CHANNEL_HANDLE = '@HRUNLOCKafrica';
-  const CHANNEL_URL = 'https://www.youtube.com/@HRUNLOCKafrica';
-  // Add your YouTube Channel ID here to enable automatic video loading
-  // Find it at: https://commentpicker.com/youtube-channel-id.php
-  // Or visit your channel page, view source, and search for "channelId"
-  const CHANNEL_ID = null; // Example: 'UCxxxxxxxxxxxxxxxxxxxxxxxxxx'
+      const CHANNEL_HANDLE = '@HRUNLOCKafrica';
+      const CHANNEL_URL = 'https://www.youtube.com/@HRUNLOCKafrica';
+      // YouTube Channel ID for automatic video loading
+      const CHANNEL_ID = 'UCP2TPJBbAqy9X_W-4ebtIdQ';
 
   // Function to extract video ID from YouTube URL or ID
   const extractVideoId = (url) => {
