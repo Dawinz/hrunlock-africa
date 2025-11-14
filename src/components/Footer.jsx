@@ -31,7 +31,7 @@ const Footer = () => {
           <div className="footer-section footer-brand">
             <div className="footer-logo">
               <img 
-                src="/images/cropped-HRUNLOCK-Tab-icon-32x32.png" 
+                src="/images/hrunlock-africa-with-bg.png" 
                 alt="HRUNLOCK Africa" 
                 className="footer-logo-icon"
               />

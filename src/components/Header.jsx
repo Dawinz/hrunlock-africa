@@ -24,7 +24,7 @@ const Header = () => {
           <div className="logo">
             <Link to="/">
               <img 
-                src="/images/cropped-HRUNLOCK-Tab-icon-32x32.png" 
+                src="/images/hrunlock-africa-no-bg.png" 
                 alt="HRUNLOCK Africa" 
                 className="logo-icon"
               />
