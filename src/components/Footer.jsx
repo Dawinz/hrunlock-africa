@@ -35,7 +35,6 @@ const Footer = () => {
                 alt="HRUNLOCK Africa" 
                 className="footer-logo-icon"
               />
-              <h4>HRUNLOCK Africa</h4>
             </div>
             <p className="footer-tagline">Awaken boldness, clarity, and purpose.</p>
             <p className="footer-description">

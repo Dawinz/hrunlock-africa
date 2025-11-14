@@ -28,7 +28,6 @@ const Header = () => {
                 alt="HRUNLOCK Africa" 
                 className="logo-icon"
               />
-              HRUNLOCK <span className="logo-accent">Africa</span>
             </Link>
           </div>
           <nav className={`nav ${isMenuOpen ? 'active' : ''}`} id="nav">
